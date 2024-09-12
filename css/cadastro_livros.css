@@ -1,0 +1,45 @@
+body {
+    background-color: #332D2D;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #523F3E;
+    border-radius: 19px;
+    padding: 2rem;
+    margin: 5% 1%;
+}
+
+.form-container {
+    background-color: #523F3E;
+    border-radius: 19px;
+    padding: 4rem;
+    max-width: 800px;
+    width: 100%; 
+}
+
+h1 {
+    color: #DCDCDC;
+    padding: 1.5rem;
+}
+
+.btn-secondary {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.btn-secondary:hover {
+    background-color: #5a626896;
+    border-color: #545b628f;
+}
+
+.btn-primary {
+    background-color: #88100C;
+    border-color: #88100c93;
+}
+
+.btn-primary:hover {
+    background-color: #88100c73;
+    border-color: #88100c5b;
+}
