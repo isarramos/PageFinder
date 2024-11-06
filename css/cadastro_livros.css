@@ -1,45 +1,81 @@
 body {
-    background-color: #332D2D;
+    background-color: #332D2D; 
     margin: 0;
     padding: 0;
 }
 
-main {
-    background-color: #523F3E;
-    border-radius: 19px;
-    padding: 2rem;
-    margin: 5% 1%;
+.container {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea.form-control {
+    resize: none;
 }
 
 .form-container {
-    background-color: #523F3E;
-    border-radius: 19px;
-    padding: 4rem;
-    max-width: 800px;
-    width: 100%; 
+    background-color: #523F3E; 
+    border-radius: 19px; 
+    padding: 4rem; 
+    max-width: 800px; 
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
 }
 
 h1 {
-    color: #DCDCDC;
-    padding: 1.5rem;
+    color: #DCDCDC; 
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 2rem; 
 }
 
-.btn-secondary {
-    background-color: #5a6268;
-    border-color: #545b62;
+.form-floating {
+    margin-bottom: 0.75rem; 
 }
 
-.btn-secondary:hover {
-    background-color: #5a626896;
-    border-color: #545b628f;
+.form-control {
+    font-size: 1rem;
+}
+
+textarea.form-control {
+    resize: none; 
+}
+
+.d-flex {
+    gap: 2rem; 
+}
+
+.d-flex .form-floating {
+    margin-bottom: 1.5rem;
+}
+
+.btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    width: 45%;
 }
 
 .btn-primary {
-    background-color: #88100C;
-    border-color: #88100c93;
+    background-color: #88100C; 
+    border-color: #530f0a; 
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    width: 45%;
 }
 
 .btn-primary:hover {
-    background-color: #88100c73;
-    border-color: #88100c5b;
+    background-color: #340605; 
+    border-color: rgb(43, 7, 5);
+}
+
+.btn-secondary {
+    background-color: #88100C;
+    border-color: #530f0a;
+}
+
+.btn-secondary:hover {
+    background-color: #340605;
+    border-color: rgb(43, 7, 5);
 }

@@ -1,0 +1,76 @@
+/* navbar.css */
+
+/* Container para o título e o menu de navegação */
+header {
+    display: flex;             /* Flexbox para alinhar o título e o menu */
+    justify-content: space-between; /* Espaço entre o título e o menu */
+    align-items: center;       /* Alinha verticalmente os itens */
+    padding: 10px 20px;        /* Espaçamento ao redor */
+    background-color: #333;    /* Cor de fundo da barra */
+}
+
+/* Título "PageFinder" */
+header .title {
+    color: #88100C;            /* Cor do título */
+    font-size: 24px;           /* Tamanho da fonte */
+    font-weight: bold;         /* Fonte em negrito */
+}
+
+/* Barra de navegação */
+nav {
+    background-color: #333;  /* Cor de fundo da barra */
+}
+
+/* Remove os pontos de lista */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;           /* Usa flexbox para organizar os itens em linha */
+    justify-content: flex-end; /* Alinha os itens à direita */
+}
+
+/* Estilo para os itens de lista */
+nav ul li {
+    margin-left: 20px;      /* Espaço entre os itens */
+}
+
+/* Estilo para os links */
+nav ul li a {
+    color: #DCDCDC;           /* Cor das letras */
+    text-decoration: none;    /* Remove o sublinhado */
+    font-size: 18px;          /* Tamanho da fonte */
+    font-weight: bold;        /* Deixa a fonte em negrito */
+    padding: 10px 15px;       /* Espaço dentro do link */
+    border-radius: 4px;       /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Efeito de transição */
+}
+
+/* Estilo para os links quando o mouse passa por cima */
+nav ul li a:hover {
+    background-color: #575757; /* Cor de fundo ao passar o mouse */
+    border-radius: 4px;         /* Mantém bordas arredondadas */
+}
+
+/* Estilo para o link ativo (página atual) */
+nav ul li a.active {
+    background-color: #4CAF50; /* Cor de fundo para o item ativo */
+    color: white;              /* Cor do texto no item ativo */
+}
+
+/* Responsividade para telas pequenas (como celulares) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;  /* Alinha título e menu verticalmente em telas pequenas */
+        text-align: center;      /* Centraliza o conteúdo */
+    }
+
+    nav ul {
+        display: block;         /* Exibe os itens em coluna */
+    }
+
+    nav ul li {
+        display: block;         /* Cada item de navegação ocupa uma linha */
+        margin-bottom: 10px;     /* Espaçamento entre os itens */
+    }
+}

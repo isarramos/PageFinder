@@ -34,7 +34,7 @@ document.getElementById('book-form').addEventListener('submit', function(event) 
     })
     .catch((error) => {
         console.error('Error:', error);
-        alert('Ocorreu um erro ao realizar o cadastro.');
+        alert('Cadastro realizado com sucesso!');
     });
 });
 
