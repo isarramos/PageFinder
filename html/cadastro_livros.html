@@ -9,17 +9,17 @@
     <title>PageFinder</title>
 </head>
 <body>
-    <div id="navbar-container">
-        <nav>
-            <div class="title">PageFinder</div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="cadastro_livros.html">Cadastro e Avaliação de Livros</a></li>
-                <li><a href="#">Recomendações</a></li>
-                <li><a href="cadastro_usuario.html">Cadastro de Usuário</a></li>
-            </ul>
-        </nav>
-    </div>
+    <header>
+        <div class="logo">PageFinder</div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="cadastro_livros.html">Cadastro e Avaliação de Livros</a></li>
+                    <li><a href="recomendacoes.html">Recomendações</a></li>
+                    <li><a href="cadastro_usuario.html">Cadastro de Usuário</a></li>
+                </ul>
+            </nav>
+    </header>
     <div class="container vh-100 d-flex justify-content-center align-items-center">
         <div class="form-container">
             <form id="book-form">
@@ -63,8 +63,14 @@
                     <label for="nota">Nota</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" id="resenha" name="resenha" placeholder="Resenha" rows="4"></textarea>
-                    <label for="resenha">Resenha</label>
+                    <input 
+                        type="file" 
+                        class="form-control" 
+                        id="imagem" 
+                        name="imagem" 
+                        accept="image/*" 
+                        placeholder="Upload de Imagem">
+                    <label for="imagem">Upload de Imagem</label>
                 </div>
                 <div class="d-flex gap-5 justify-content-center mt-4">
                     <button type="reset" class="btn btn-primary btn-lg cancel">Cancelar</button>

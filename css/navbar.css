@@ -1,55 +1,62 @@
-/* navbar.css */
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Container para o título e o menu de navegação */
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #332D2D;
+    color: #DCDCDC;
+    line-height: 1.6;
+}
+
+/* Cabeçalho (Header) */
 header {
     display: flex;             /* Flexbox para alinhar o título e o menu */
     justify-content: space-between; /* Espaço entre o título e o menu */
     align-items: center;       /* Alinha verticalmente os itens */
     padding: 10px 20px;        /* Espaçamento ao redor */
-    background-color: #333;    /* Cor de fundo da barra */
+    background-color: #252323; /* Cor de fundo da barra */
 }
 
 /* Título "PageFinder" */
-header .title {
+header .logo {
     color: #88100C;            /* Cor do título */
     font-size: 24px;           /* Tamanho da fonte */
     font-weight: bold;         /* Fonte em negrito */
 }
 
 /* Barra de navegação */
-nav {
-    background-color: #333;  /* Cor de fundo da barra */
-}
-
-/* Remove os pontos de lista */
 nav ul {
-    list-style-type: none;
+    list-style-type: none;     /* Remove os pontos de lista */
     margin: 0;
     padding: 0;
-    display: flex;           /* Usa flexbox para organizar os itens em linha */
+    display: flex;             /* Organiza os itens em linha */
     justify-content: flex-end; /* Alinha os itens à direita */
 }
 
 /* Estilo para os itens de lista */
 nav ul li {
-    margin-left: 20px;      /* Espaço entre os itens */
+    margin-left: 20px;         /* Espaço entre os itens */
 }
 
 /* Estilo para os links */
 nav ul li a {
-    color: #DCDCDC;           /* Cor das letras */
-    text-decoration: none;    /* Remove o sublinhado */
-    font-size: 18px;          /* Tamanho da fonte */
-    font-weight: bold;        /* Deixa a fonte em negrito */
-    padding: 10px 15px;       /* Espaço dentro do link */
-    border-radius: 4px;       /* Bordas arredondadas */
+    color: #DCDCDC;            /* Cor das letras */
+    text-decoration: none;     /* Remove o sublinhado */
+    font-size: 18px;           /* Tamanho da fonte */
+    font-weight: bold;         /* Deixa a fonte em negrito */
+    padding: 10px 15px;        /* Espaço dentro do link */
+    border-radius: 4px;        /* Bordas arredondadas */
     transition: background-color 0.3s ease; /* Efeito de transição */
 }
 
 /* Estilo para os links quando o mouse passa por cima */
 nav ul li a:hover {
     background-color: #575757; /* Cor de fundo ao passar o mouse */
-    border-radius: 4px;         /* Mantém bordas arredondadas */
 }
 
 /* Estilo para o link ativo (página atual) */
@@ -58,19 +65,60 @@ nav ul li a.active {
     color: white;              /* Cor do texto no item ativo */
 }
 
-/* Responsividade para telas pequenas (como celulares) */
+/* Títulos das seções (Recomendações por categoria) */
+h1 {
+    text-align: center;
+    margin: 2rem 0;
+    color: #DCDCDC;
+}
+
+/* Layout das categorias de livros */
+.categoria {
+    margin-bottom: 4rem;
+    padding: 0 8rem;
+}
+
+.livros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.livro {
+    background-color: #252323;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+    color: #DCDCDC;
+}
+
+.capa {
+    width: 100%;
+    height: 200px;
+    background-color: #575757;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Responsividade para telas pequenas */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;  /* Alinha título e menu verticalmente em telas pequenas */
-        text-align: center;      /* Centraliza o conteúdo */
+        flex-direction: column;
+        text-align: center;
     }
 
     nav ul {
-        display: block;         /* Exibe os itens em coluna */
+        display: block;
     }
 
     nav ul li {
-        display: block;         /* Cada item de navegação ocupa uma linha */
-        margin-bottom: 10px;     /* Espaçamento entre os itens */
+        display: block;
+        margin: 10px 0;
+    }
+
+    .livros {
+        flex-direction: column;
+        align-items: center;
     }
 }

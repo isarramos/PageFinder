@@ -1,0 +1,107 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    gap: 2rem; /* Espaço entre os elementos */
+    align-items: center;
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+.suggestion-card {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    background-color: #252323;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    max-width: 1000px;
+    width: 100%;
+}
+
+.text-section {
+    flex: 1;
+}
+
+.suggestion-title {
+    color: #A34944;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.author-name {
+    font-size: 2.5rem;
+    color: #DCDCDC;
+    margin-bottom: 1.5rem;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #DCDCDC;
+}
+
+.image-section {
+    flex: 1;
+    text-align: center;
+}
+
+.author-image {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Seção de Citações */
+.quotes {
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+    margin-top: 2rem;
+}
+
+.section-title {
+    color: #A34944;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.quote-list blockquote {
+    background-color: #252323;
+    color: #DCDCDC;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #88100C;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+.quote-list blockquote span {
+    display: block;
+    margin-top: 0.5rem;
+    color: #A34944;
+    font-size: 0.9rem;
+}
+
+/* Seção de Obras */
+.works {
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+    margin-bottom: 2rem;
+}
+
+.works-list {
+    list-style: none;
+    padding: 0;
+}
+
+.works-list li {
+    background-color: #252323;
+    color: #DCDCDC;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #88100C;
+    border-radius: 8px;
+    text-align: center;
+}
